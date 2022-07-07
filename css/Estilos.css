@@ -1,0 +1,77 @@
+#Barra_nav {
+    background-color: black!important;
+    font-family: 'Poppins', sans-serif;
+}
+
+#Boton_main {
+    background-color: rgba(7, 222, 246, 0.979)!important;
+}
+
+#Hero {
+    background-image: url(../img/lol.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: 'Poppins', sans-serif;
+    height: 600px;
+}
+
+#introduccion #Galeria #sponsors {
+    font-family: 'Poppins', sans-serif;
+}
+
+.Img_beneficios {
+    border-radius: 50%;
+}
+
+#juegos {
+    font-family: 'Poppins', sans-serif;
+}
+
+#juego_1 {
+    background-image: url(../img/TFT.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#juego_2 {
+    background-image: url(../img/LORN.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#juego_3 {
+    background-image: url(../img/VLR.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.fadein {
+    opacity:0;
+}
+
+.fadeonload {
+    opacity:0;
+}
+
+.centrar {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .testimonial-slider .carousel-indicators button {
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    border-radius: 100%;
+}
+.testimonial-slider {
+    padding: 10px 0px 40px;
+}
+
+#Pie_de_pagina {
+    background-color: rgb(247, 247, 247);
+}

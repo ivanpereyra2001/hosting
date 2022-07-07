@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+
+<html lang = "es">
+  <head>
+    
+    <title class>League of Legends</title>
+    <meta charset = "utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    
+
+    <link rel="stylesheet" type="text/css" href="./css/Estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link href="./img/logopagina.png" rel="icon" type="image/png" />
+
+</head>
+
+<body id = "page-top">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+      $(document).ready(function() 
+      {
+        $(window).scroll( function()
+        {
+          $('.fadein').each( function(i)
+          {
+             var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+             var bottom_of_window = $(window).scrollTop() + $(window).height();
+              if( bottom_of_window > bottom_of_element )
+              {
+                $(this).animate({'opacity':'1'},1000);
+              }
+          }); 
+        });
+      });
+    </script>
+
+    <script>
+      $(document).ready(function() 
+      {
+        $('.fadeonload').each( function(i)
+        {
+          $(this).animate({'opacity':'1','margin-left':'0px'},1000);
+        }); 
+      });
+    </script>
+  
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3" id="Barra_nav">
+      <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#page-top">
+          <img src="img/logo1.lol.png" alt="Logo empresa" width="100" height="80">
+        </a>
+        
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+                
+          <ul class="navbar-nav ms-auto my-2 my-lg-0">
+
+            <li class="nav-item"><a class="nav-link text-white" href="#juegos">otros juegos</a></li>
+            
+            <li class="nav-item"><a class="nav-link text-white" href="#Galeria">arte del juego</a></li>
+
+            <li class="nav-item"><a class="nav-link text-white" href="#Contacto">Contacto</a></li>
+                
+          </ul>
+            
+        </div>
+          
+      </div>
+    
+      </nav>
+
+      <div class="position-relative overflow-hidden p-5 p-md-5  text-center bg-light fadeonload" id = "Hero">
+        
+        <div class="col-md-5 p-lg-5 mx-auto my-5 transparente">
+          
+          <h1 class="display-4 fw-normal text-white">League of Legends</h1>
+          <a class="btn btn-primary btn-lg" href=https://signup.leagueoflegends.com/es-mx/signup/index# href="#" id = "Boton_main">juega gratis</a>
+      
+        </div>
+
+      </div>
+
+      <section class ="my-5 fadeonload" id="introduccion">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="section-heading text-uppercase">¿Que es League of Legends?</h2>
+            </div>
+            <div class="row text-center my-5">
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                      <img src="img/logodescrp.png" alt="descripcion" width="200" height="150" class = "Img_descripcion">
+                    </span>
+                    <p class="text-muted">League of Legends (también conocido por sus siglas LoL) es un videojuego del género multijugador de arena de batalla en línea (MOBA) y deporte electrónico el cual fue desarrollado por Riot Games para Microsoft Windows y OS X y para consolas digitales</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                      <img src="img/lineas.lol.jpg" alt="Componentes internos" width="200" height="154" class = "Img_descripcion">
+                    </span>
+                    <p class="text-muted">dentro del juego actualmente hay 159 campeones, cada uno con habilidades diferentes de los cuales, cada uno cumple un rol distinto,entre ellos esta, asesino,luchadores,magos,tiradores,soportes,tanques</p>
+                </div>
+                <div class="col-md-4">
+                    <span class="fa-stack fa-4x">
+                      <img src="img/mapas.png" alt="Parte frontal" width="124" height="124" class = "Img_descripcion">
+                    </span>
+                    <p class="text-muted">League of legends cuenta con 3 modos de juego denominados: la grieta del invocador(mas famoso),el abismo de los lamentos y Team Fight Tactics</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id = "juegos">
+    
+      <div class="container py-4">
+        <header class="pb-3 mb-4 border-bottom">
+          <a class="d-flex align-items-center text-dark text-decoration-none">
+            <h2 class="fs-4 fadein">Otros juegos de Riot games</h2>
+          </a>
+        </header>
+
+        <div class="p-5 mb-4 text-white bg-dark rounded-3 fadein">
+          <div class="container-fluid py-5" id = "juego_1">
+            <div class = "transparente">
+              <h2 class="display-5 fw-bold">Teamfight tactics</h2>
+              <p class="col-md-8 fs-4">Teamfight Tactics es un juego estratégico gratuito de todos contra todos en el que participan campeones emblemáticos de League of Legends. ¿Cuál es el objetivo del juego? Hacer que tu equipo crezca y proteger tu tablero para convertirte en el último jugador en pie.</p>
+            </div>
+            <a button class="btn btn-primary btn-lg" href="https://teamfighttactics.leagueoflegends.com/es-mx/" type="button">Descargar</button></a>
+          </div>
+        </div>
+
+        <div class="row align-items-md-stretch fadein">
+          <div class="col-md-6">
+            <div class="h-100 p-5 text-white bg-dark rounded-3" id = "juego_2">
+              <div class = "transparente">
+                <h2>Legends of runeterra</h2>
+                <p>En este juego de cartas estratégico, lo que importa es la destreza, no la suerte. Combinad campeones, aliados y regiones de Runaterra para desbloquear sinergias únicas y sorprender a vuestro rival.</p>
+              </div>
+              <a button class="btn btn-primary" href=https://playruneterra.com/es-mx/ type="button">Descargar</button></a>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="h-100 p-5 text-white bg-dark rounded-3" id = "juego_3">
+              <div class = "transparente">
+                <h2>Valorant</h2>
+                <p>es un shooter 5v5 donde tendras que Combinar tu estilo y experiencia en un escenario global y competitivo. Tienes 13 rondas para atacar y defender tu lado con armas precisas y habilidades tácticas.</p>
+              </div>
+             <a button class="btn btn-primary"href=https://playvalorant.com/es-mx/download/ type="button">Descargar</button></a> 
+            </div>
+          </div>
+        </div>
+
+      </div>
+    
+    </section>
+
+    <section id = "Galeria">
+      
+      <div class = "container py-4">
+        
+        <header class="pb-3 mb-4 border-bottom fadein">
+          <a class="d-flex align-items-center text-dark text-decoration-none">
+            <h2 class="fs-4 fadein">Galeria de imagenes</h2>
+          </a>
+        </header>
+  
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 fadein">
+            
+            <img
+              src="./img/carrusel_1.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Imagen frontal"
+              data-bs-toggle="modal"
+              data-bs-target="#Img_1"
+            />
+            <img
+              src="./img/carrusel_2.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Imagen frontal 2"
+              data-bs-toggle="modal"
+              data-bs-target="#Img_2"
+            />
+          </div>
+  
+          <div class="col-lg-4 mb-4 mb-lg-0 fadein">
+            <img
+              src="./img/carrusel_3.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Image frontal 2 espejada"
+              data-bs-toggle="modal"
+              data-bs-target="#Img_3"
+            />
+  
+            <img
+              src="./img/carrusel_4.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Imagen de costado"
+              data-bs-toggle="modal"
+              data-bs-target="#Img_4"
+            />
+          </div>
+  
+          <div class="col-lg-4 mb-4 mb-lg-0 fadein">
+            <img
+              src="./img/carrusel_5.png"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Imagen superior"
+              data-bs-toggle="modal"
+              data-bs-target="#Img_5"
+            />
+  
+            <img
+              src="./img/carrusel_6.jpg"
+              class="w-100 shadow-1-strong rounded mb-4"
+              alt="Empaque"
+              data-bs-toggle="modal"
+              data-bs-target="#Img_6"
+            />
+          </div>
+        </div>
+      
+      </div>  
+
+      <div class="modal fade" id="Img_1" tabindex="-1" aria-labelledby="Img_1" aria-hidden="true">
+        
+        <div class="modal-dialog modal-fullscreen">
+
+          <div class="modal-content transparente">
+
+            <div class="modal-body">
+              
+              <img src="./img/carrusel_1.jpg" class="width:100% height: 230px shadow-1-strong rounded centrar" alt="Imagen frontal"/>
+            
+            </div>
+            
+            <button type="button" class="btn btn-default btn-primary" data-bs-dismiss="modal">volver</button>
+            
+          </div>
+          
+        </div>
+      
+      </div>
+
+      <div class="modal fade" id="Img_2" tabindex="-1" aria-labelledby="Img_2" aria-hidden="true">
+        
+        <div class="modal-dialog modal-fullscreen">
+
+          <div class="modal-content transparente">
+
+            <div class="modal-body">
+              
+              <img src="./img/carrusel_2.jpg" class="width:100% height: 230px shadow-1-strong rounded centrar" alt="Imagen frontal"/>
+            
+            </div>
+            
+            <button type="button" class="btn btn-default btn-primary" data-bs-dismiss="modal">volver</button>
+            
+          </div>
+          
+        </div>
+      
+      </div>
+
+      <div class="modal fade" id="Img_3" tabindex="-1" aria-labelledby="Img_3" aria-hidden="true">
+        
+        <div class="modal-dialog modal-fullscreen">
+
+          <div class="modal-content transparente">
+
+            <div class="modal-body">
+              
+              <img src="./img/carrusel_3.jpg" class="width:100% height: 230px shadow-1-strong rounded centrar" alt="Imagen frontal"/>
+            
+            </div>
+            
+            <button type="button" class="btn btn-default btn-primary" data-bs-dismiss="modal">volver</button>
+            
+          </div>
+          
+        </div>
+      
+      </div>
+
+      <div class="modal fade" id="Img_4" tabindex="-1" aria-labelledby="Img_4" aria-hidden="true">
+        
+        <div class="modal-dialog modal-fullscreen">
+
+          <div class="modal-content transparente">
+
+            <div class="modal-body">
+              
+              <img src="./img/carrusel_4.jpg" class="width:100% height: 230px shadow-1-strong rounded centrar" alt="Imagen frontal"/>
+            
+            </div>
+            
+            <button type="button" class="btn btn-default btn-primary" data-bs-dismiss="modal">volver</button>
+            
+          </div>
+          
+        </div>
+      
+      </div>
+
+      <div class="modal fade" id="Img_5" tabindex="-1" aria-labelledby="Img_5" aria-hidden="true">
+        
+        <div class="modal-dialog modal-fullscreen">
+
+          <div class="modal-content transparente">
+
+            <div class="modal-body">
+              
+              <img src="./img/carrusel_5.png" class="width:100% height: 230px shadow-1-strong rounded centrar" alt="Imagen frontal"/>
+            
+            </div>
+            
+            <button type="button" class="btn btn-default btn-primary" data-bs-dismiss="modal">volver</button>
+            
+          </div>
+          
+        </div>
+      
+      </div>
+
+      <div class="modal fade" id="Img_6" tabindex="-1" aria-labelledby="Img_6" aria-hidden="true">
+        
+        <div class="modal-dialog modal-fullscreen">
+
+          <div class="modal-content transparente">
+
+            <div class="modal-body">
+              
+              <img src="./img/carrusel_6.jpg" class="width:100% height: 230px shadow-1-strong rounded centrar" alt="Imagen frontal"/>
+            
+            </div>
+            
+            <button type="button" class="btn btn-default btn-primary" data-bs-dismiss="modal">volver</button>
+            
+          </div>
+          
+        </div>
+      
+      </div>
+
+    </section>
+
+    <section id = "sponsors">
+
+      <div class = "container py-4">
+        <header class="pb-3 mb-4 border-bottom fadein">
+          <a class="d-flex align-items-center text-dark text-decoration-none">
+            <h2 class="fs-4 fadein">sponsors</h2>
+          </a>
+        </header>
+        
+        <div class="row align-items-center fadein">
+          
+          <div class="col-md-3 col-sm-6 my-3">
+            <img class="img-fluid img-brand d-block mx-auto" src="./img/aorus.png" alt="Microsoft logo">
+          </div>
+          
+          <div class="col-md-3 col-sm-6 my-3">
+            <img class="img-fluid img-brand d-block mx-auto" src="./img/samsung.png" alt="Google logo">
+          </div>
+          <div class="col-md-3 col-sm-6 my-3">
+            <img class="img-fluid img-brand d-block mx-auto" src="./img/logitech-logo.png" alt="Compra gamer">
+          </div>
+          
+          <div class="col-md-3 col-sm-6 my-3">
+            <img class="img-fluid img-brand d-block mx-auto" src="./img/spotify.png" alt="DMI">
+          </div>
+
+        </div>
+    
+      </div>
+
+    </section>
+    
+  <footer id = "Pie_de_pagina" class = "pt-4">
+
+      <section class="page-section" id="Contacto">
+        
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-8 col-xl-6 text-center">
+                    <h2 class="mt-0">Contáctenos</h2>
+                    <hr class="divider">
+            </div>
+            <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
+                
+              <div class="col-lg-6">
+  
+                    <form id="contactForm">
+                      
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="nombre_apellido" type="text" placeholder="Ingrese su nombre...">
+                            <label for="nombre_apellido">Nombre y Apellido</label>
+                        </div>
+                        
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="email" type="email" placeholder="nombre@ejemplo.com">
+                            <label for="email">Correo electrónico</label>
+                        </div>
+
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="telefono" type="tel" placeholder="+(54)">
+                            <label for="telefono">Número de telefono</label>
+                        </div>
+                        <div class="d-grid"><button class="btn btn-primary btn-xl" type="submit">Enviar</button></div>
+                    </form>
+
+              </div>
+            </div>
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+
+              <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                <a href = "https://www.instagram.com/riotgames/?hl=en">
+                <i class="bi bi-instagram"></i>
+                </a>
+                <div>Rior games ing Official</div>
+              </div>
+  
+              <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                <a href = "https://www.facebook.com/RiotGames/">
+                <i class="bi bi-facebook"></i>
+                </a>
+                <div>Riot games fb Official </div>
+              </div>
+
+              <div class="col-lg-4 text-center mb-5 mb-lg-0">
+                <a href = "https://www.youtube.com/c/leagueoflegends">
+                <i class="bi bi-youtube"></i>
+                </a>
+                <div>Riot games YT </div>
+              </div>
+  
+            </div>
+
+        </div>
+      </section>
+  
+  </footer>
+  
+  </body>
+
+</html>
+
